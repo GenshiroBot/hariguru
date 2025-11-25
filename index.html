@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari Guru – Ibu Nuraini</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- POPUP MUSIK -->
+  <div class="popup-overlay" id="musicPopup">
+    <div class="popup-card animate-pop">
+      <h2>Putar Lagu?</h2>
+      <p>Lagu <b>Terbuang dengan waktu</b> akan menemani halaman spesial ini. 💐</p>
+
+      <div class="popup-buttons">
+        <button class="btn primary" id="playMusic">
+          <i data-feather="play"></i> Putar
+        </button>
+        <button class="btn ghost" id="closePopup">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- YOUTUBE PLAYER -->
+  <iframe id="ytPlayer" class="hidden"></iframe>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-content animate-fade">
+      <h1 class="animate-slide">Selamat Hari Guru Nasional</h1>
+      <p class="subtitle animate-slide-delay">Untuk Ibu <b>NURAINI S.KOM</b> – Guru yang selalu kami banggakan 💙</p>
+    </div>
+  </header>
+
+  <!-- SECTION PUISI -->
+  <section class="section glass animate-fade">
+    <h2 class="section-title">Puisi untuk Ibu</h2>
+    <p id="typewriter" class="typewriter"></p>
+  </section>
+
+  <!-- GALERI FOTO -->
+  <section class="section animate-fade-delay">
+    <h2 class="section-title">Galeri Kenangan</h2>
+
+    <div class="gallery">
+      <img src="images/foto1.jpg" class="gallery-item animate-zoom">
+      <img src="images/foto2.jpg" class="gallery-item animate-zoom-delay">
+      <img src="images/foto3.jpg" class="gallery-item animate-zoom-delay2">
+      <img src="images/foto4.jpg" class="gallery-item animate-zoom-delay3">
+      <img src="images/foto5.jpg" class="gallery-item animate-zoom-delay4">
+    </div>
+  </section>
+
+  <!-- UCAPAN -->
+  <section class="section glass animate-fade">
+    <h2 class="section-title">Ucapan dari Kami</h2>
+
+    <div class="cards">
+      <div class="card animate-pop-small">Terima kasih sudah sabar menghadapi kelas kami, Bu. Kami sayang Ibu! 🤍</div>
+      <div class="card animate-pop-small-delay">Semoga Ibu selalu sehat dan bahagia dalam setiap langkahnya.</div>
+      <div class="card animate-pop-small-delay2">Ibu adalah guru yang tak tergantikan – terima kasih atas semua ilmu.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer animate-fade">
+    Website ini dibuat dengan penuh cinta oleh murid-murid  
+    <b>Ibu NURAINI S.KOM</b> 💙
+  </footer>
+
+  <script src="script.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
