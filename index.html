@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Guru, Ibu Nuraini</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feather Icons untuk icon play / pause -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- POPUP MUSIK -->
+  <div class="music-modal" id="musicModal">
+    <div class="music-card">
+      <h2>Putar Lagu?</h2>
+      <p>
+        Kita putar lagu <strong>"Terbuai Dengan Waktu"</strong> untuk menemani
+        halaman spesial ini? 💐
+      </p>
+      <div class="music-buttons">
+        <button id="btnPlayMusic" class="btn primary">
+          <i data-feather="play"></i> Putar
+        </button>
+        <button id="btnCloseMusic" class="btn ghost">
+          Nanti saja
+        </button>
+      </div>
+      <p class="music-note">
+        (Suara hanya akan nyala kalau Ibu / teman-teman klik tombol ini)
+      </p>
+    </div>
+  </div>
+
+  <!-- YOUTUBE PLAYER (default) -->
+  <div class="hidden">
+    <iframe
+      id="ytPlayer"
+      title="Terbuai Dengan Waktu"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+
+    <!-- Jika mau pakai file MP3 sendiri, isi src di bawah dan aktifkan mode 'local' di script.js -->
+    <audio id="audioPlayer" src=""></audio>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Selamat Hari Guru Nasional</h1>
+      <p class="tagline">
+        Untuk Ibu <strong>NURAINI S.KOM</strong> — dari murid-muridmu. 💙
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION HERO + FOTO UTAMA -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Ibu, Terima Kasih Untuk Semua Ilmu</h2>
+          <p>
+            Di halaman kecil ini, kami kumpulkan foto, kata-kata, dan doa terbaik
+            sebagai hadiah sederhana untuk Ibu. Mungkin tidak sebanding dengan
+            semua sabar dan lelah Ibu, tapi semoga bisa jadi kenangan manis
+            suatu hari nanti.
+          </p>
+          <p class="hero-small">
+            “Seorang guru menyalakan banyak lilin, tapi tak pernah kehabisan cahaya.”
+          </p>
+        </div>
+        <div class="hero-photo-card">
+          <img src="images/foto1.jpg" alt="Foto bersama Ibu Nuraini dan seluruh kelas">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION GALERI FOTO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Galeri Kenangan</h2>
+        <p class="section-subtitle">
+          Beberapa momen yang kami abadikan bersama Ibu. Mungkin sederhana,
+          tapi akan selalu kami ingat.
+        </p>
+
+        <div class="gallery-grid">
+          <figure>
+            <img src="images/foto1.jpg" alt="Foto bersama seluruh kelas dan Ibu">
+            <figcaption>Bareng</figcaption>
+          </figure>
+          <figure>
+            <img src="images/foto2.jpg" alt="Foto murid laki-laki dan Ibu">
+            <figcaption>Bareng😎</figcaption>
+          </figure>
+          <figure>
+            <img src="images/foto3.jpg" alt="Foto kelas dan Ibu">
+            <figcaption>Bareng</figcaption>
+          </figure>
+          <figure>
+            <img src="images/foto4.jpg" alt="Foto murid laki-laki dan Ibu 2">
+            <figcaption>Bareng</figcaption>
+          </figure>
+          <figure>
+            <img src="images/foto5.jpg" alt="Foto murid perempuan dan Ibu">
+            <figcaption>Bareng</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PUISI -->
+    <section class="section light">
+      <div class="container poem">
+        <h2 class="section-title">Puisi Untuk Ibu.</h2>
+
+        <p>Di depan kelas, Ibu berdiri dengan senyum yang sama setiap pagi,</p>
+        <p>dan di hati Ibu, doa-doa yang tidak pernah putus.</p>
+
+        <p>Nama kami mungkin akan Ibu lupa satu per satu,</p>
+        <p>tapi nasehat Ibu akan kami bawa,</p>
+        <p>di jalan yang panjang setelah lulus nanti.</p>
+
+        <p>Ibu mengajarkan kami rumus, kode, dan logika,</p>
+        <p>tapi lebih dari itu,</p>
+        <p>Ibu mengajarkan kami bagaimana menjadi manusia.</p>
+
+        <p>Jika suatu hari kami berhasil,</p>
+        <p>dan orang-orang bertanya siapa yang pertama kali percaya,</p>
+        <p>nama Ibu akan selalu kami sebut pelan dalam hati.</p>
+
+        <p class="poem-ending">
+          Terima kasih, Ibu.<br>
+          Dari kami, murid-murid yang ribut tapi sebenarnya sayang sekali pada Ibu. 💙
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION UCAPAN -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Ucapan Singkat dari Kami</h2>
+        <div class="messages-grid">
+          <div class="message-card">
+            <p>
+              “Terima kasih sudah sabar banget sama kelas kita, Bu.
+              Maaf kalau sering ribut.”
+            </p>
+          </div>
+          <div class="message-card">
+            <p>
+              “Semoga Ibu selalu sehat, panjang umur, dan makin betah ngajar
+              generasi-generasi setelah kami.”
+            </p>
+          </div>
+          <div class="message-card">
+            <p>
+              “Kalau suatu hari nanti kita reuni, kami ingin Ibu tetap ada
+              di antara kami, dengan senyum yang sama seperti di foto-foto ini.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        Website ini dibuat dengan penuh rasa terima kasih oleh
+        <strong>murid-murid Ibu</strong>.
+      </p>
+      <p class="footer-small">
+        Selamat Hari Guru Nasional, Bu. Semoga Allah selalu menjaga setiap langkah Ibu. 🤍
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
